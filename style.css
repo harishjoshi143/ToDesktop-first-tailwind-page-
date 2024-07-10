@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-gray-800;
+  }
+ .container{
+  @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-5;
+ }
+ .gradient-hover-outer{
+  @apply p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200 
+ }
+ .gradient-hover-inner{
+  @apply hover:from-red-50 hover:bg-gradient-to-br hover:via-purple-50 hover:to-yellow-50
+ }
+}
